@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      .el--1 {
+        background-color: blueviolet;
+        /* align-self: flex-end; */
+        order: 1;
+      }
+      .el--2 {
+        background-color: orangered;
+        height: 100px;
+      }
+      .el--3 {
+        background-color: green;
+        height: 150px;
+        order: 10;
+      }
+      .el--4 {
+        background-color: goldenrod;
+        height: 200px;
+        order: -20;
+      }
+      .el--5 {
+        background-color: palevioletred;
+        order: -2;
+      }
+      .el--6 {
+        background-color: steelblue;
+      }
+      .el--7 {
+        background-color: yellow;
+        order: -1;
+      }
+      .el--8 {
+        background-color: crimson;
+        /* align-self: flex-start; */
+      }
+
+      .container {
+        /* STARTER */
+
+        font-family: sans-serif;
+        background-color: #ddd;
+        font-size: 40px;
+        margin: 40px;
+        width: 1000px;
+        height: 300px;
+        /* FLEXBOX */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        /* flex-direction: row; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="el el--1">ONE</div>
+      <div class="el el--2">TWO</div>
+      <div class="el el--3">THREE</div>
+
+      <div class="el el--4">FOUR</div>
+      <div class="el el--5">FIVE</div>
+      <div class="el el--6">SIX</div>
+      <div class="el el--7">SEVEN</div>
+      <div class="el el--8">EIGHT</div>
+    </div>
+  </body>
+</html>
