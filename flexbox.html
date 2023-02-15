@@ -10,10 +10,12 @@
         background-color: blueviolet;
         /* align-self: flex-end; */
         order: 1;
+        flex-grow: 1;
       }
       .el--2 {
         background-color: orangered;
         height: 100px;
+        flex-grow: 1;
       }
       .el--3 {
         background-color: green;
@@ -24,10 +26,12 @@
         background-color: goldenrod;
         height: 200px;
         order: -20;
+        flex-grow: 2;
       }
       .el--5 {
         background-color: palevioletred;
         order: -2;
+        flex-grow: 1;
       }
       .el--6 {
         background-color: steelblue;
@@ -39,6 +43,23 @@
       .el--8 {
         background-color: crimson;
         /* align-self: flex-start; */
+      }
+
+      .el {
+        /* flex-basis: 30px;
+        flex-shrink: 1;
+        flex-grow: 1; */
+        /* flex: 1 1 50px; */
+        /* flex: 0 0 50px; */
+        /* 
+        DEFAULT:
+        flex-basis: auto; 
+        flex-shrink: 1;
+        flex-grow: 0;
+
+        flex: grow shrink basis ;
+        flex: 1 0 200px;        
+        */
       }
 
       .container {
@@ -54,7 +75,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 10px;
+        /* gap: 10px; */
         /* flex-direction: row; */
       }
     </style>
@@ -67,9 +88,9 @@
 
       <div class="el el--4">FOUR</div>
       <div class="el el--5">FIVE</div>
-      <div class="el el--6">SIX</div>
+      <!-- <div class="el el--6">SIX</div>
       <div class="el el--7">SEVEN</div>
-      <div class="el el--8">EIGHT</div>
+      <div class="el el--8">EIGHT</div> -->
     </div>
   </body>
 </html>

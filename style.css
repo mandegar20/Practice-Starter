@@ -37,6 +37,7 @@ nav {
 
 article {
   margin-bottom: 60px;
+  width: 825px;
 }
 
 .post-header {
@@ -51,7 +52,39 @@ aside {
   /* padding-top: 50px;
   padding-bottom: 50px; */
   padding: 50px 0;
-  width: 500px;
+  width: 300px;
+  padding: 30px 10px;
+}
+aside li {
+  list-style: none;
+}
+
+/* FLEXBOX */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+}
+.author-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#author {
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+.main-passage {
+  display: flex;
+  gap: 75px;
+  align-items: flex-start;
+}
+
+aside li {
+  display: flex;
+  gap: 10px;
+}
+aside h4 {
+  margin-bottom: 20px;
 }
 
 /* SMALLER ELEMENTS */
@@ -99,6 +132,7 @@ ol {
 li {
   font-size: 20px;
   margin-bottom: 10px;
+
   /* display: inline; */
 }
 
@@ -113,6 +147,8 @@ li:last-child {
 /* article header p {
   font-style: italic;
 } */
+
+/* FLOAT 
 .author-img {
   float: left;
   margin-bottom: 20px;
@@ -120,7 +156,7 @@ li:last-child {
 #author {
   font-style: italic;
   font-size: 18px;
-  /* margin-left: 60px; */
+  margin-left: 60px;
   padding-top: 10px;
   float: left;
 }
@@ -152,11 +188,13 @@ aside {
 footer {
   clear: both;
 }
+*/
 
 .related-author {
   font-size: 18px;
   font-weight: bold;
-} */
+}
+*/
 
 /* ul {
   list-style: none;
@@ -167,8 +205,9 @@ footer {
 }
 
 body {
-  /* background-color: orangered; */
+  /* background-color: orangered; 
 }
+*/
 
 /* .first-li {
   font-weight: bold;
