@@ -26,7 +26,7 @@ body {
   padding-left: 40px;
   padding-right: 40px; */
   padding: 20px 40px;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
   /* height: 80px; */
 }
 
@@ -36,7 +36,7 @@ nav {
 }
 
 article {
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
   width: 825px;
 }
 
@@ -73,7 +73,7 @@ aside li {
   margin-bottom: 0;
   margin-left: 10px;
 }
-.main-passage {
+/* .main-passage {
   display: flex;
   gap: 75px;
   align-items: flex-start;
@@ -85,7 +85,7 @@ aside li {
 }
 aside h4 {
   margin-bottom: 20px;
-}
+} */
 
 /* SMALLER ELEMENTS */
 h1,
@@ -334,3 +334,15 @@ footer p {
 nav p {
   font-size: 18px;
 } */
+
+/* LAYOUT USING GRID */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  row-gap: 60px;
+  align-items: start;
+}
+.main-header {
+  grid-column: 1 /-1;
+}

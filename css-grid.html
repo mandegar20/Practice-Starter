@@ -8,16 +8,17 @@
     <style>
       .el--1 {
         background-color: blueviolet;
-        align-self: start;
-        justify-self: end;
+        /* align-self: start;
+        justify-self: end; */
+        grid-column: 2/4;
       }
 
       .el--2 {
         background-color: orangered;
         /* grid-column: 2 / span 3;
         grid-row: 2/3; */
-        grid-column: -2/ -1;
-        grid-row: -2/-1;
+        /* grid-column: -2/ -1;
+        grid-row: -2/-1; */
       }
 
       .el--3 {
@@ -27,10 +28,10 @@
 
       .el--4 {
         background-color: goldenrod;
-        grid-column: 3 / 4;
+        /* grid-column: 3 / 4;
         grid-row: 1 / 2;
         align-self: stretch;
-        justify-self: stretch;
+        justify-self: stretch; */
       }
 
       .el--5 {
@@ -39,12 +40,14 @@
 
       .el--6 {
         background-color: steelblue;
+        grid-column: 1 / span 3;
+        grid-row: 2 / 4;
       }
 
       .el--7 {
         background-color: yellow;
-        grid-column: -4/ -3;
-        grid-row: -4/ -3;
+        /* grid-column: -4/ -3;
+        grid-row: -4/ -3; */
       }
 
       .el--8 {
@@ -85,10 +88,14 @@
         font-size: 40px;
         margin: 100px;
 
-        width: 1000px;
+        width: 80%;
         height: 600px;
 
         /* CSS GRID */
+        display: grid;
+        /* grid-template-columns: 1fr 1fr 1fr; */
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
       }
     </style>
   </head>
@@ -111,6 +118,7 @@
       <div class="el el--4">(4)</div>
       <div class="el el--5">(5)</div>
       <div class="el el--6">(6)</div>
+      <div class="el el--7">(7)</div>
       <div class="el el--7">(7)</div>
     </div>
   </body>
