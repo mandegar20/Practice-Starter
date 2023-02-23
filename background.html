@@ -22,13 +22,13 @@
         height: 300px;
         /*  background: linear-gradient(direction, color-step, color-step2, ....); */
         /* background: linear-gradient(to right, orange, green); */
-        background: linear-gradient(90deg, orange 10%, green 20%, blue 75%);
+        background: radial-gradient(circle, orange 0%, green 100%);
       }
       .box-2 {
         margin-top: 10px;
         width: 600px;
         height: 300px;
-        background: radial-gradient(circle, green 10%, red 50%, blue 80%);
+        background: repeating-radial-gradient(circle, orange 0px, green 20%);
       }
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -43,6 +43,10 @@
         background-position
         background-origin
         background-clip
+
+        repeated-linear-gradient 
+        repeated-radial-gradient 
+
     
     -->
     <div class="box-1"></div>
